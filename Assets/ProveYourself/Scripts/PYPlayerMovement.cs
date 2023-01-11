@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PYPlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed = 5;
@@ -16,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 destination = new Vector3(horizontal, 0, vertical);
+        float moveForward++;
+        Vector3 destination = new Vector3(horizontal, 0, moveForward);
         transform.Translate(destination * speed * Time.deltaTime);
     }
 }
