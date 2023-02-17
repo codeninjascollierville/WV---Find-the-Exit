@@ -6,6 +6,7 @@ public class PYPlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed = 5;
+    public float moveForward = 1;
     void Start()
     {
         
@@ -15,8 +16,6 @@ public class PYPlayerMovement : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        float moveForward++;
         Vector3 destination = new Vector3(horizontal, 0, moveForward);
         transform.Translate(destination * speed * Time.deltaTime);
     }

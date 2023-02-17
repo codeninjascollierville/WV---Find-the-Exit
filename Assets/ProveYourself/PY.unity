@@ -3936,10 +3936,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675807241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59c659eb40fcd24eace79bafa0191b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 50d6efced04012c44b3e3b3efaa69d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  moveForward: 1
 --- !u!136 &1675807244
 CapsuleCollider:
   m_ObjectHideFlags: 0
